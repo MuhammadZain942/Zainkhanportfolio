@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zainwork</title>
+    <link rel="shortcut icon" href="/pictures/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @keyframes animate {
+
+            40%,
+            60% {
+                left: calc(100% + 4px);
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen font-sans">
+
+    <!--loader  -->
+    <div class="loader"></div>
+    <!-- navbar -->
+    <div class="header1">
+        <header class="shadow mb-2 bg-white w-14">
+            <div
+                class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+                <a href="#" class="flex items-center whitespace-nowrap text-2xl font-black">
+
+                    <span class="mr-2 text-4xl text-blue-600"></span>
+                    <span class="text-black">ZainWork</span>
+                </a>
+                <input type="checkbox" class="peer hidden" id="navbar-open" />
+                <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </label>
+                <nav aria-label="Header Navigation"
+                    class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+                    <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+                        <li class="text-black md:mr-12 hover:text-blue-600"><a href="#home">Home</a></li>
+                        <li class="text-black md:mr-12 hover:text-blue-600"><a href="#recent_work">Recent
+                                Work</a>
+                        </li>
+                        <li class="text-black md:mr-12 hover:text-blue-600"><a href="#skills">Skills</a></li>
+                        <li class="text-black md:mr-12 hover:text-blue-600"><a href="#services">Services</a></li>
+                        <li class="text-black md:mr-12 hover:text-blue-600"><a href="#get_in_touch">Get in Touch</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+    <!-- Main Content -->
+    <div class="main-content " id="home">
+        <div class="mt-24 ml-6 sm:ml-24 w-full  sm:w-[500px]  overflow-hidden">
+            <h1 class="text-white text-3xl sm:text-4xl font-bold">Muhammad Zain</h1>
+            <span class="text first-text relative text-[24px] sm:text-[30px] font-semibold text-white">I'm a</span>
+            <span
+                class="text sec-text relative text-[24px] sm:text-6xl font-semibold text-[#4070F4] whitespace-nowrap before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-[#010718] before:border-l-2 before:border-[#4070F4] before:animate-[animate_4s_steps(12)_infinite]"></span>
+            <br>
+            <span class="text first-text relative text-[24px] sm:text-[30px] font-semibold text-white">I build dynamic
+                <br> and responsive websites </span>
+        </div>
+        <div class="image">
+            <img src="/pictures/WhatsApp Image 2023-11-18 at 12.39.55 AM.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- cards works -->
+    <div class="container_maincard bg-black" id="recent_work">
+
+        <div class="headingh1">
+            <h1 class="text-white text-4xl font-semibold ">Recent Work</h1>
+        </div>
+        <div class="card__container">
+            <article class="card__article">
+                <img src="/pictures/chatapp.png" alt="image" class="card__img">
+                <div class="card__data">
+                    <span class="card__description">Chat app by using socket.io</span>
+                    <h2 class="card__title">Chat App socket.io</h2>
+                    <a href="https://github.com/MuhammadZain942/Chapapp?tab=readme-ov-file"
+                        class="card__button">Github</a>
+                </div>
+            </article>
+
+            <article class="card__article">
+                <img src="/pictures/fileupload.png" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">Upload file in directory</span>
+                    <h2 class="card__title">File Upload</h2>
+                    <a href="https://github.com/MuhammadZain942/Fileupload" class="card__button">Github</a>
+                </div>
+            </article>
+
+            <article class="card__article">
+                <img src="/pictures/consultingapp.png" alt="image" class="card__img">
+
+                <div class="card__data">
+                    <span class="card__description">Consulting Website using wordpress</span>
+                    <h2 class="card__title">JourneyatOverseas</h2>
+                    <a href="https://journeyatoverseas.site/" class="card__button">link</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- skills  section-->
+    <div class="skill_sec_main" id="skills">
+        <div class="text-3xl text-white font-semibold text-center">
+            <h1 class="skillh1">Skills</h1>
+        </div>
+        <section class="skill_section">
+
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progress" data-progress="80">
+                        <span class="progress-number">0%</span>
+                    </div>
+                </div>
+                <span class="title">HTML</span>
+            </div>
+
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progress" data-progress="75">
+                        <span class="progress-number">0%</span>
+                    </div>
+                </div>
+                <span class="title">Javascript</span>
+            </div>
+
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progress" data-progress="85">
+                        <span class="progress-number">0%</span>
+                    </div>
+                </div>
+                <span class="title">Python</span>
+            </div>
+            <div class="parent-skill">
+                <div class="skill">
+                    <div class="progress" data-progress="65">
+                        <span class="progress-number">0%</span>
+                    </div>
+                </div>
+                <span class="title">Django</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- services -->
+    <div class="text-white text-3xl font-semibold h1services">
+        <h1>Services</h1>
+    </div>
+    <div class="services_cards1" id="services">
+
+
+        <div class="services_card">
+            <div class="img_services"><img src="https://cdn-icons-png.flaticon.com/128/4997/4997543.png"
+                    alt="Web Development Icon" class="service-icon"></div>
+            <h3 class="service-title">Website Development</h3>
+            <p class="service-description">We provide high-quality web development services.</p>
+        </div>
+
+        <div class="services_card">
+            <div class="img_services"><img src="https://cdn-icons-png.flaticon.com/128/4997/4997543.png"
+                    alt="Web Development Icon" class="service-icon"></div>
+            <h3 class="service-title">WordPress Development</h3>
+            <p class="service-description">We provide high-quality WordPress services.</p>
+        </div>
+
+        <div class="services_card">
+            <div class="img_services"><img src="https://cdn-icons-png.flaticon.com/128/4997/4997543.png"
+                    alt="Web Development Icon" class="service-icon"></div>
+            <h3 class="service-title">Graphic Designing</h3>
+            <p class="service-description">We craft stunning visual experiences with our top-tier graphic design
+                services.</p>
+        </div>
+
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="footer-container" id="get_in_touch">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-info-circle"></i>Home</a></li>
+                    <li><a href="#recent_work"><i class="fas fa-envelope"></i>Recent Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-shield-alt"></i>Skills</a></li>
+                    <li>
+                        <p href=""><i class="fas fa-file-contract"></i>Gmail:muhmammdzain94212@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-laptop-code"></i> Web Development</a></li>
+                    <li><a href="#"><i class="fas fa-mobile-alt"></i> wordpress Development </a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Poster Designing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <a href="https://mail.google.com/">Gmail:muhmammdzain94212@gmail.com</a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Zainwork. All rights reserved.</p>
+            <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
